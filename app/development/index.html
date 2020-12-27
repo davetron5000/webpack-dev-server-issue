@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Webpack will insert a <style> tag here for us -->
+    <!-- Webpack will insert a <script> tag -->
+  <script defer src="js/bundle.js"></script><link href="css/styles.css" rel="stylesheet"></head>
+  <body class="pa4 dark-gray bg-light-gray">
+    <h1>Markdown Preview-o-tron 7000!</h1>
+    <form id="editor">
+      <textarea 
+        class="w-100 ba br2 pa2 b--black-30"
+        id="source"
+        rows="10"
+        cols="80"></textarea>
+      <br>
+<!-- START:edit:3 -->
+      <input
+        type="submit"
+        value="Preview!"
+        class="grow pointer ba br3 bg-washed-green ph3 pv2">
+<!-- END:edit:3 -->
+    </form>
+    <hr>
+    <section id="preview">
+    </section>
+  </body>
+</html>

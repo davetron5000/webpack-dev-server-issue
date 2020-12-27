@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  webpack-bug:
+    image: webpack-bug
+    entrypoint: "tail -f /dev/null"
+    ports:
+      - "8888:3000"
+    volumes:
+      - type: volume
+        target: /usr/dependencies-cache
